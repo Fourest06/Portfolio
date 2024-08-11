@@ -44,7 +44,7 @@ const SocialLinks = () => {
                 Resume <BsFillPersonLinesFill size={30} />
                 </>
                 ),
-                href: '',
+                href: '/Resume - Malinao.pdf',
                 style: 'rounded-br-md',
                 download: true,
         },

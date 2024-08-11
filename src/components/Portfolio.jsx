@@ -1,62 +1,83 @@
-import React from 'react'
-import authenticationDjango from '../assets/portfolio/authenticationDjango.png'
+import React, { useState } from 'react';
+import GRAPHpickJava from '../assets/portfolio/GRAPHpickJava.jpg'
 import blogReact from '../assets/portfolio/blogReact.png'
-import formDjango from '../assets/portfolio/formDjango.png'
+import notesApp from '../assets/portfolio/notesAppDjango&React.png'
 import inventoryAppDjango from '../assets/portfolio/inventoryAppDjango.png'
-import mario from '../assets/portfolio/mario.png'
+import pizzaPHPandMySQL from '../assets/portfolio/pizzaPHP&MySQL.png'
 import recipeTailwind from '../assets/portfolio/recipeTailwind.png'
+import Modal from './Modal'
 
 const Portfolio = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const portfolios = [
     {
       id: 1,
-      src: authenticationDjango
+      src: GRAPHpickJava,
+      link: "https://github.com/Fourest06/GRAPHpick"
     },
 
     {
       id: 2,
-      src: blogReact
+      src: blogReact,
+      link: "https://github.com/Fourest06/Blog-React"
     },
 
     {
       id: 3,
-      src: formDjango
+      src: notesApp,
+      link: "https://github.com/Fourest06/Notey-Django-React"
     },
 
     {
       id: 4,
-      src: inventoryAppDjango
+      src: inventoryAppDjango,
+      link: "https://github.com/Fourest06/Inventory-App-Django"
     },
 
     {
       id: 5,
-      src: mario
+      src: pizzaPHPandMySQL,
+      link: "https://github.com/Fourest06/Pizza-php"
     },
 
     {
       id: 6,
-      src: recipeTailwind
+      src: recipeTailwind,
+      link: "https://github.com/Fourest06/Recipe-Tailwind"
     },
   ]
+
+  const openModal = (src) => {
+    setSelectedImage(src);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectedImage(null);
+  };
 
   return (
     <div name='portfolio' className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
       <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
+        <div className='pb-8 mt-16'>
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
           <p className='py-6'>Check out some of my work right here</p>
-          </div>
+        </div>
 
           <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
-            portfolios.map(({ id, src }) => (
+            portfolios.map(({ id, src, link }) => (
               
-                <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                  <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
+                <div key={id} className='shadow-md shadow-gray-600 rounded-lg overflow-hidden'>
+                  <img src={src} alt="" className='w-full h-40 rounded-md duration-200 hover:scale-105' onClick={() => openModal(src)}/>
                   <div className='flex items-center justify-center'>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                    <a href={link} target="_blank" rel="noopener noreferrer"> 
+                      <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                    </a>
                   </div>
                 </div>
               
@@ -64,6 +85,7 @@ const Portfolio = () => {
           }
         </div>
       </div>
+      <Modal isOpen={modalOpen} onClose={closeModal} src={selectedImage} />
     </div>
   )
 }

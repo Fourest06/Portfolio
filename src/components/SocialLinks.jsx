@@ -19,7 +19,7 @@ const SocialLinks = () => {
             id: 2,
             child: (
                 <>
-                    Github <FaGithub size={30} />
+                    GitHub <FaGithub size={30} />
                 </>
             ),
             href: 'https://github.com/Fourest06',

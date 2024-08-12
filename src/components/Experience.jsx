@@ -83,7 +83,7 @@ const Experience = () => {
         {
             id: 10,
             src: PHP,
-            title: 'php',
+            title: 'PHP',
             style: 'shadow-indigo-500'
         },
 

@@ -57,7 +57,7 @@ const Certificate = () => {
   return (
     <div name='certificate' className='w-full min-h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white'>
       <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-        <div className='pb-8 mt-16'>
+        <div className='pb-8 mt-12'>
             <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Certificate</p>
             <p className='py-6'>Here are a few of my certificates that highlight my skills and achievements</p>
         </div>

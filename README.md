@@ -18,3 +18,5 @@ This portfolio is built based on the tutorial by Yash Patel. You can watch the t
 - Adjusted margins for improved layout.
 - Added a section to display certifications.
 - Enhanced the full-screen image viewing experience.
+- Changed the button portfolio into resume and code into github logo.
+- Implemented validation in contact.

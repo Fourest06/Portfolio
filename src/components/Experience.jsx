@@ -83,7 +83,7 @@ const Experience = () => {
             id: 10,
             src: Csharp,
             title: 'C#',
-            style: 'shadow-indigo-500'
+            style: 'shadow-purple-500'
         },
 
         {

@@ -2,14 +2,13 @@ import React from 'react'
 import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import JAVASCRIPT from '../assets/javascript.png'
-import BOOTSTRAP from '../assets/bootstrap.png'
 import TAILWIND from '../assets/tailwind.png'
 import REACT from '../assets/react.png'
 import Cplusplus from '../assets/c++.png'
 import PYTHON from '../assets/python.png'
 import JAVA from '../assets/java.png'
 import PHP from '../assets/php.png'
-import DJANGO from '../assets/django.png'
+import Csharp from '../assets/csharp.png'
 import LARAVEL from '../assets/laravel.png'
 import MYSQL from '../assets/mysql.png'
 import GITHUB from '../assets/github.png'
@@ -40,76 +39,69 @@ const Experience = () => {
 
         {
             id: 4,
-            src: BOOTSTRAP,
-            title: 'Bootstrap',
-            style: 'shadow-purple-500'
-        },
-
-        {
-            id: 5,
             src: TAILWIND,
             title: 'Tailwind',
             style: 'shadow-sky-400'
         },
 
         {
-            id: 6,
+            id: 5,
             src: REACT,
             title: 'React',
             style: 'shadow-cyan-400'
         },
 
         {
-            id: 7,
+            id: 6,
             src: Cplusplus,
             title: 'C++',
             style: 'shadow-blue-400'
         },
 
         {
-            id: 8,
+            id: 7,
             src: PYTHON,
             title: 'Python',
             style: 'shadow-amber-400'
         },
 
         {
-            id: 9,
+            id: 8,
             src: JAVA,
             title: 'Java',
             style: 'shadow-amber-700'
         },
 
         {
-            id: 10,
+            id: 9,
             src: PHP,
             title: 'PHP',
             style: 'shadow-indigo-500'
         },
 
         {
-            id: 11,
-            src: DJANGO,
-            title: 'Django',
-            style: 'shadow-emerald-500'
+            id: 10,
+            src: Csharp,
+            title: 'C#',
+            style: 'shadow-indigo-500'
         },
 
         {
-            id: 12,
+            id: 11,
             src: LARAVEL,
             title: 'Laravel',
             style: 'shadow-red-500'
         },
 
         {
-            id: 13,
+            id: 12,
             src: MYSQL,
             title: 'MySQL',
             style: 'shadow-yellow-600'
         },
 
         {
-            id: 14,
+            id: 13,
             src: GITHUB,
             title: 'Github',
             style: 'shadow-gray-400'

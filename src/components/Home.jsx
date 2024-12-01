@@ -15,8 +15,8 @@ const Home = () => {
 
                 <div className='md:block lg:hidden'>
                     <a
-                      href='/Resume - MALINAO.pdf' 
-                      download='Resume - MALINAO.pdf' 
+                      href='/Fourest_Glenn_Malinao_Resume.pdf' 
+                      download='Fourest_Glenn_Malinao_Resume.pdf' 
                       className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                         Resume
                     </a>
